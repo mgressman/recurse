@@ -33,11 +33,11 @@ namespace ConsoleApp4
         {
             var data = new object[] { 'a', 'b', 1, new object[] {'x', 'y', new object[] {1, 2, new[] {'e'}}, 'r', 't'}, 3, 4, 'i' };
 
-            var flattened = new object[] { };
+            var items = new object[] { };
 
-            this.GetItems(data, ref flattened);
+            this.GetItems(data, ref items);
 
-            Console.WriteLine(string.Join(',', flattened));
+            Console.WriteLine(string.Join(',', items));
             Console.ReadLine();
         }
 
